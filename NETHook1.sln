@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETHook1", "NETHook1\NETHook1.csproj", "{551622B2-7F4F-4FA1-9295-E4FF4A22B2A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{551622B2-7F4F-4FA1-9295-E4FF4A22B2A1}.Debug|x64.ActiveCfg = Debug|x64
+		{551622B2-7F4F-4FA1-9295-E4FF4A22B2A1}.Debug|x64.Build.0 = Debug|x64
+		{551622B2-7F4F-4FA1-9295-E4FF4A22B2A1}.Release|x64.ActiveCfg = Release|x64
+		{551622B2-7F4F-4FA1-9295-E4FF4A22B2A1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD4586C0-859E-4FD6-9A4C-3B002EB0B358}
+	EndGlobalSection
+EndGlobal
