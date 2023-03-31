@@ -89,7 +89,7 @@ namespace NETHook1
 
             //User selects the toolpaths  suing openfiledialog 
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = @"C:\Users\Public\Documents\Shared Mastercam 2021\mill\Ops\SLITTING FIXTURE\SLITTING";
+            openFileDialog.InitialDirectory = @"\\PAI5\SMMC Application Data\Mastercam\Ops\SLITTING FIXTURE\SLITTING";
             string filepath;
             openFileDialog.ShowDialog();
 

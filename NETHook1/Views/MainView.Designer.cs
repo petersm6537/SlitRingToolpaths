@@ -36,7 +36,6 @@ namespace NETHook1
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.toolDiameterInput)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +43,7 @@ namespace NETHook1
             // button1
             // 
             resources.ApplyResources(this.button1, "button1");
-            this.button1.Image = global::NETHook1.Properties.Resources.cancel_24;
+            this.button1.Image = global::NETHook1.Properties.Resources.ok_24;
             this.button1.Name = "button1";
             this.button1.Click += new System.EventHandler(this.OnCloseClick);
             // 
@@ -57,8 +56,8 @@ namespace NETHook1
             // 
             // toolDiameterInput
             // 
-            resources.ApplyResources(this.toolDiameterInput, "toolDiameterInput");
             this.toolDiameterInput.DecimalPlaces = 4;
+            resources.ApplyResources(this.toolDiameterInput, "toolDiameterInput");
             this.toolDiameterInput.Increment = new decimal(new int[] {
             1,
             0,
@@ -79,12 +78,11 @@ namespace NETHook1
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.toolDiameterInput, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.button3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.toolDiameterInput, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // button3
@@ -93,12 +91,6 @@ namespace NETHook1
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // MainView
             // 
@@ -121,6 +113,5 @@ namespace NETHook1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
     }
 }
