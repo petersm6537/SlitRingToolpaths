@@ -46,12 +46,14 @@ namespace NETHook1
             Mastercam.Math.Point3D selectedPoint = new Mastercam.Math.Point3D();
             Mastercam.Math.Point3D selectedPoint2 = new Mastercam.Math.Point3D();
 
+            MessageBox.Show("Hello world");
+
             //Establishes the point objects from selection
 
             Mastercam.IO.SelectionManager.AskForPoint("Select point 1", Mastercam.IO.Types.PointMask.Null, ref selectedPoint);
             Mastercam.IO.SelectionManager.AskForPoint("Select point 2", Mastercam.IO.Types.PointMask.Null, ref selectedPoint2);
 
-            DialogResult dialogResult = MessageBox.Show("Is this selection correct?", "Confirmation", MessageBoxButtons.OKCancel);
+            DialogResult dialogResult = MessageBox.Show("Is this selection correct? Hellooooo", "Confirmation", MessageBoxButtons.OKCancel);
 
             if (dialogResult == DialogResult.OK)
             {
@@ -78,6 +80,13 @@ namespace NETHook1
 
                 line.Commit();
 
+                MessageBox.Show("Hello world");
+
+
+                //testing
+
+
+
             }
 
         }
@@ -99,6 +108,13 @@ namespace NETHook1
 
             Mastercam.Operations.OperationsManager.ImportAllOperations(importOptions);
         
+
+        }
+
+        private void settingsButton_Click(object sender, System.EventArgs e)
+        {
+            var settingsForm = new SettingsForm();
+            settingsForm.Show();
 
         }
     }

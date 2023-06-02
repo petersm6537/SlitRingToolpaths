@@ -5,5 +5,8 @@
     <Setting Name="FirstTimeRunning" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="toolpathFilepath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\PAI5\SMMC Application Data\Mastercam\Ops\SLITTING FIXTURE\SLITTING</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

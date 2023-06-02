@@ -40,14 +40,14 @@ namespace NETHook1
             Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
             Application.ThreadException += (sender, args) => this.HandleUnhandledException(args.Exception);
 
-            if (Settings.Default.FirstTimeRunning)
+            if (Properties.Settings.Default.FirstTimeRunning)
             {
                 var msg = ResourceReaderService.GetString("FirstTimeRunning");
                 var assembly = Assembly.GetExecutingAssembly().FullName;
                 EventManager.LogEvent(MessageSeverityType.InformationalMessage, assembly, msg.IsSuccess ? msg.Value : msg.Error);
 
-                Settings.Default.FirstTimeRunning = false;
-                Settings.Default.Save();
+                Properties.Settings.Default.FirstTimeRunning = false;
+                Properties.Settings.Default.Save();
             }
 
             return base.Init(param);

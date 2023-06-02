@@ -36,6 +36,7 @@ namespace NETHook1
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
+            this.settingsButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.toolDiameterInput)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +46,7 @@ namespace NETHook1
             resources.ApplyResources(this.button1, "button1");
             this.button1.Image = global::NETHook1.Properties.Resources.ok_24;
             this.button1.Name = "button1";
+            this.button1.TabStop = false;
             this.button1.Click += new System.EventHandler(this.OnCloseClick);
             // 
             // button2
@@ -83,6 +85,7 @@ namespace NETHook1
             this.tableLayoutPanel1.Controls.Add(this.toolDiameterInput, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.button2, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.settingsButton, 0, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // button3
@@ -91,6 +94,14 @@ namespace NETHook1
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // settingsButton
+            // 
+            resources.ApplyResources(this.settingsButton, "settingsButton");
+            this.settingsButton.Image = global::NETHook1.Properties.Resources.Run32;
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.UseVisualStyleBackColor = true;
+            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
             // 
             // MainView
             // 
@@ -113,5 +124,6 @@ namespace NETHook1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button settingsButton;
     }
 }
